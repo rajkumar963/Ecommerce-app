@@ -717,22 +717,29 @@ footer .copyright{
 .about-header p{
     color: #fff;
 }
-.about-head{
+#about-head{
     display: flex;
     align-items: center;
 }
-.about-head img{
-    width: 500px;
-    margin-right: 40px;
-    height: 300px;
-}
-.about-head div p{
-    margin: 15px 0 25px 0;
-    color: #000;
-}
-#about-app{
+
+ #about-head img{
+    width: 50%;
+    height: auto;
+ }
+ 
+ #about-head div{
+    padding-left: 40px;
+ }
+
+ #about-head p{
+    padding: 15px 0;
+    color: #2b2d2c;
+ }
+
+ #about-app{
     text-align: center;
-}
+ }
+
 #about-app .video{
     width: 70%;
     height: 100%;
@@ -745,6 +752,105 @@ footer .copyright{
 }
 
 /* Contact Page */
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-details .details{
+    width: 40%;
+}
+#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+}
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact-details .details h4{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+}
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #d6d3d3;
+}
+#form-details form button{
+    background-color: #088178;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+    color: #000;
+}
+#form-details .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #131212;
+}
+
 
 /* Cart Page */
 
@@ -836,7 +942,18 @@ footer .copyright{
     #newsletter .form{
         width: 70%;
     }
+    /* #footer{
+        padding: 20px;
+        width: 100%;
+    } */
 
+    /* Contact Page */
+   #form-details{
+     padding: 40px;
+    }
+    #form-details form{
+        width: 50%;
+    }
 }
 
 @media (max-width: 477px){
@@ -896,10 +1013,10 @@ footer .copyright{
     }
 
     #footer{
-        padding: 40px 20px;
+        padding:20px;
     }
-    footer .copyright{
-        text-align: start;
+    #footer .copyright{
+        text-align: center;
     }
 
     /* Single Product */
@@ -935,5 +1052,47 @@ footer .copyright{
     }
     #blog .blog-details a{
         text-align: start;
+    }
+
+    /* About Page */
+    #about-head{
+        padding: 20px;
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div{
+        padding-left: 0px;
+    }
+    #about-app {
+        padding: 20px;
+    }
+    #about-app .video{
+        width: 100%;
+    }
+
+    /* Contact Page */
+    #contact-details{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact-details .map{
+        width: 100%;
+    }
+    #form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form-details form{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
